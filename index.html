@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Viora — Premium Women's Wellness & Holistic Care. Care That Meets You Where You Are. Personalized wellness for hormonal health, mindfulness, nutrition, and movement." />
+  <meta name="keywords" content="women's wellness, holistic care, hormonal health, mindfulness, nutrition, wellness coaching, Viora" />
+  <meta name="author" content="Viora Wellness" />
+  <meta property="og:title" content="Viora — Women's Wellness & Holistic Care" />
+  <meta property="og:description" content="Care That Meets You Where You Are. A thoughtful wellness experience designed around the changing rhythms, needs, and goals of modern women." />
+  <meta property="og:type" content="website" />
+  <title>Viora — Women's Wellness & Holistic Care</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body dir="ltr">
+
+<!-- ══════════════════════════════════════════════════════════════
+     MOBILE NAV OVERLAY
+══════════════════════════════════════════════════════════════ -->
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MOBILE NAV DRAWER
+══════════════════════════════════════════════════════════════ -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <div class="mobile-nav-header">
+    <a href="#home" class="site-logo" aria-label="Viora — Home">
+      <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="logo-svg-path" d="M19 6 C14 6 9 10 8 15 C7 20 10 25 14 28 C16 30 18 32 19 34 C20 32 22 30 24 28 C28 25 31 20 30 15 C29 10 24 6 19 6Z" stroke-width="1.5" fill="none"/>
+        <circle class="logo-svg-path" cx="19" cy="16" r="4" stroke-width="1.5" fill="none"/>
+        <path class="logo-svg-path" d="M13 22 Q19 26 25 22" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-wordmark">Viora</span>
+    </a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&times;</button>
+  </div>
+
+  <div class="mobile-nav-links">
+    <a href="#home"     class="mobile-nav-link">Home <i class="fa-solid fa-arrow-right" style="font-size:14px;color:var(--text-muted)"></i></a>
+    <a href="#wellness" class="mobile-nav-link">Wellness <i class="fa-solid fa-arrow-right" style="font-size:14px;color:var(--text-muted)"></i></a>
+    <a href="#services" class="mobile-nav-link">Services <i class="fa-solid fa-arrow-right" style="font-size:14px;color:var(--text-muted)"></i></a>
+    <a href="#stories"  class="mobile-nav-link">Stories <i class="fa-solid fa-arrow-right" style="font-size:14px;color:var(--text-muted)"></i></a>
+    <a href="#contact"  class="mobile-nav-link">Contact <i class="fa-solid fa-arrow-right" style="font-size:14px;color:var(--text-muted)"></i></a>
+  </div>
+
+  <div class="mobile-nav-footer">
+
+    <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Begin Your Journey</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HERO SECTION (also wraps the header)
+══════════════════════════════════════════════════════════════ -->
+<div class="hero-area" id="home">
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="#home" class="site-logo" aria-label="Viora — Return to top">
+          <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="logo-svg-path" d="M19 6 C14 6 9 10 8 15 C7 20 10 25 14 28 C16 30 18 32 19 34 C20 32 22 30 24 28 C28 25 31 20 30 15 C29 10 24 6 19 6Z" stroke-width="1.5" fill="none"/>
+            <circle class="logo-svg-path" cx="19" cy="16" r="4" stroke-width="1.5" fill="none"/>
+            <path class="logo-svg-path" d="M13 22 Q19 26 25 22" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-wordmark">Viora</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home"     class="nav-link">Home</a>
+          <a href="#wellness" class="nav-link">Wellness</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#stories"  class="nav-link">Stories</a>
+          <a href="#contact"  class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Controls -->
+        <div class="header-controls">
+          <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" id="theme-toggle" title="Toggle dark/light mode">
+            <span id="theme-icon">🌙</span>
+          </button>
+
+          <button class="btn-nav" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Begin Your Journey</button>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO CONTENT -->
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="hero-grid">
+
+      <!-- Left: copy -->
+      <div class="hero-content">
+        <span class="eyebrow hero-eyebrow">Women's Wellness, Reimagined</span>
+
+        <h1 class="hero-heading" aria-label="Your Wellbeing Deserves A More Personal Approach">
+          <span class="hero-line">Your Wellbeing</span>
+          <span class="hero-line">Deserves A More</span>
+          <span class="hero-line">Personal Approach.</span>
+        </h1>
+
+        <p class="hero-description">
+          A thoughtful wellness experience designed around the changing rhythms, needs, and goals of modern women.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#wellness" class="btn btn-primary hero-btn-1" id="hero-cta-1">
+            Explore Wellness
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#services" class="btn btn-outline hero-btn-2" id="hero-cta-2">
+            Meet Viora
+          </a>
+        </div>
+
+        <div class="hero-trust" aria-label="Trust indicators">
+          <div class="hero-trust-item">
+            <span class="hero-trust-num">2,400+</span>
+            <span class="hero-trust-label">Women Supported</span>
+          </div>
+          <div class="hero-trust-divider" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-num">98%</span>
+            <span class="hero-trust-label">Client Satisfaction</span>
+          </div>
+          <div class="hero-trust-divider" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <span class="hero-trust-num">5+</span>
+            <span class="hero-trust-label">Wellness Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="assets/images/hero.jpg"
+               alt="A calm, sophisticated woman in a serene wellness sanctuary, holding a cup of herbal tea by a sunlit window"
+               width="480" height="640" loading="eager" />
+        </div>
+
+        <!-- Decorative champagne line -->
+        <div class="hero-deco-line" aria-hidden="true"></div>
+
+        <!-- Floating info card -->
+        <div class="hero-float-card" aria-label="Personalized wellness card" role="complementary">
+          <div class="float-card-icon" aria-hidden="true">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div class="float-card-label">Approach</div>
+          <div class="float-card-value">Personalized<br>Wellness Care</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Decorative background shapes -->
+  <div class="hero-blush-shape" aria-hidden="true"></div>
+  <div class="hero-bg-shape" aria-hidden="true"></div>
+
+</div><!-- /hero-area -->
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 1: WELLNESS AREAS
+══════════════════════════════════════════════════════════════ -->
+<section class="section wellness-section" id="wellness" aria-labelledby="wellness-title">
+  <div class="container">
+
+    <header class="wellness-header">
+      <span class="eyebrow reveal">Care Areas</span>
+      <h2 class="section-title reveal" id="wellness-title" style="transition-delay:0.1s">"Care Designed Around You"</h2>
+      <p class="section-subtitle reveal" style="transition-delay:0.2s">
+        Explore a more thoughtful approach to women's wellbeing through personalized areas of care.
+      </p>
+    </header>
+
+    <div class="wellness-grid" role="list">
+
+      <!-- Card 1 -->
+      <article class="wellness-card" data-anim="slide-left" role="listitem" tabindex="0" aria-label="Hormonal Wellness">
+        <div class="wellness-card-image">
+          <img src="assets/images/hormonal.jpg"
+               alt="A woman doing gentle morning stretches by a sunlit window — hormonal wellness"
+               width="400" height="200" loading="lazy" />
+        </div>
+        <div class="wellness-card-body">
+          <span class="wellness-card-num" aria-hidden="true">01</span>
+          <div class="wellness-card-icon" aria-hidden="true"><i class="fa-solid fa-circle-half-stroke"></i></div>
+          <h3 class="wellness-card-title">Hormonal Wellness</h3>
+          <p class="wellness-card-desc">Personalized support for understanding everyday hormonal changes and maintaining balance.</p>
+          <a href="#contact" class="wellness-card-link" aria-label="Explore Hormonal Wellness">
+            Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="wellness-card" data-anim="slide-bottom" role="listitem" tabindex="0" aria-label="Mind and Emotional Wellness">
+        <div class="wellness-card-image">
+          <img src="assets/images/mindfulness.jpg"
+               alt="A woman meditating peacefully on a floor cushion in a calm airy space"
+               width="400" height="200" loading="lazy" />
+        </div>
+        <div class="wellness-card-body">
+          <span class="wellness-card-num" aria-hidden="true">02</span>
+          <div class="wellness-card-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="wellness-card-title">Mind & Emotional Wellness</h3>
+          <p class="wellness-card-desc">Thoughtful practices that support calm, confidence, resilience, and emotional wellbeing.</p>
+          <a href="#contact" class="wellness-card-link" aria-label="Explore Mind and Emotional Wellness">
+            Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 — Nutrition (Unsplash) -->
+      <article class="wellness-card" data-anim="slide-right" role="listitem" tabindex="0" aria-label="Nutrition and Energy">
+        <div class="wellness-card-image">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80&auto=format&fit=crop"
+               alt="A beautifully arranged healthy meal with fresh botanicals and whole grains"
+               width="400" height="200" loading="lazy" />
+        </div>
+        <div class="wellness-card-body">
+          <span class="wellness-card-num" aria-hidden="true">03</span>
+          <div class="wellness-card-icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+          <h3 class="wellness-card-title">Nutrition & Energy</h3>
+          <p class="wellness-card-desc">Personalized nutrition guidance designed around energy, nourishment, and everyday life.</p>
+          <a href="#contact" class="wellness-card-link" aria-label="Explore Nutrition and Energy">
+            Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 — Movement (Unsplash) -->
+      <article class="wellness-card" data-anim="scale-fade" role="listitem" tabindex="0" aria-label="Movement and Body">
+        <div class="wellness-card-image">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80&auto=format&fit=crop"
+               alt="A woman doing gentle outdoor movement in a botanical garden at golden hour"
+               width="400" height="200" loading="lazy" />
+        </div>
+        <div class="wellness-card-body">
+          <span class="wellness-card-num" aria-hidden="true">04</span>
+          <div class="wellness-card-icon" aria-hidden="true"><i class="fa-solid fa-person-walking"></i></div>
+          <h3 class="wellness-card-title">Movement & Body</h3>
+          <p class="wellness-card-desc">Gentle movement and body-focused wellness programs designed to help you feel stronger and more connected.</p>
+          <a href="#contact" class="wellness-card-link" aria-label="Explore Movement and Body">
+            Explore <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 2: SIGNATURE SERVICES
+══════════════════════════════════════════════════════════════ -->
+<section class="section services-section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="services-grid">
+
+      <!-- Left: image (vertical curtain reveal) -->
+      <div class="services-image-wrap" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format&fit=crop"
+             alt="A sophisticated private wellness consultation space with warm linen textures and soft lighting"
+             width="560" height="747" loading="lazy" />
+      </div>
+
+      <!-- Right: service list -->
+      <div class="services-content">
+        <header class="services-header">
+          <span class="eyebrow">Our Services</span>
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 class="section-title" id="services-title">"Thoughtful Services.<br>Meaningful Care."</h2>
+          <p class="section-subtitle">
+            A curated range of wellness services built around your individual journey.
+          </p>
+        </header>
+
+        <ul class="services-list" aria-label="Signature wellness services">
+
+          <li class="service-item" tabindex="0">
+            <div class="service-item-inner">
+              <div class="service-item-left">
+                <span class="service-num">01</span>
+                <h3 class="service-name">Personal Wellness Consultation</h3>
+                <p class="service-desc">A dedicated conversation to understand your goals and create a meaningful wellness path.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right service-arrow" aria-hidden="true"></i>
+            </div>
+          </li>
+
+          <li class="service-item" tabindex="0">
+            <div class="service-item-inner">
+              <div class="service-item-left">
+                <span class="service-num">02</span>
+                <h3 class="service-name">Women's Nutrition Guidance</h3>
+                <p class="service-desc">Evidence-informed nutrition support designed specifically for women's changing needs.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right service-arrow" aria-hidden="true"></i>
+            </div>
+          </li>
+
+          <li class="service-item" tabindex="0">
+            <div class="service-item-inner">
+              <div class="service-item-left">
+                <span class="service-num">03</span>
+                <h3 class="service-name">Mindfulness Sessions</h3>
+                <p class="service-desc">Guided mindfulness and breathwork sessions to help you reconnect and reset.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right service-arrow" aria-hidden="true"></i>
+            </div>
+          </li>
+
+          <li class="service-item" tabindex="0">
+            <div class="service-item-inner">
+              <div class="service-item-left">
+                <span class="service-num">04</span>
+                <h3 class="service-name">Lifestyle Planning</h3>
+                <p class="service-desc">Practical, compassionate support to build daily rhythms that genuinely work for you.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right service-arrow" aria-hidden="true"></i>
+            </div>
+          </li>
+
+          <li class="service-item" tabindex="0">
+            <div class="service-item-inner">
+              <div class="service-item-left">
+                <span class="service-num">05</span>
+                <h3 class="service-name">Wellness Coaching</h3>
+                <p class="service-desc">Ongoing, personalized coaching to help you grow, sustain, and evolve your wellbeing practice.</p>
+              </div>
+              <i class="fa-solid fa-arrow-right service-arrow" aria-hidden="true"></i>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="services-cta">
+          <a href="#contact" class="btn btn-primary" id="services-cta-btn">
+            Discover Our Approach
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 3: STORIES & WELLNESS JOURNEY
+══════════════════════════════════════════════════════════════ -->
+<section class="section stories-section" id="stories" aria-labelledby="stories-title">
+  <div class="container">
+
+    <header class="stories-header">
+      <span class="eyebrow reveal">Real Stories</span>
+      <h2 class="section-title reveal" id="stories-title" style="transition-delay:0.1s">"Small Changes.<br>Deeper Transformation."</h2>
+    </header>
+
+    <!-- Story cards -->
+    <div class="stories-grid" aria-label="Client stories and testimonials">
+
+      <article class="story-card" aria-label="Story by Maya R.">
+        <div class="story-stars" aria-label="5 star rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <blockquote class="story-quote">
+          "Viora helped me create a wellness routine that finally felt like mine."
+        </blockquote>
+        <div class="story-author">
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#B98992,#632F3E)" aria-hidden="true">M</div>
+          <div class="story-author-info">
+            <span class="story-author-name">Maya R.</span>
+            <span class="story-author-role">Wellness Journey — 6 months</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="story-card" aria-label="Story by Elena R.">
+        <div class="story-stars" aria-label="5 star rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <blockquote class="story-quote">
+          "Every part of the experience felt thoughtful, calm, and genuinely personal."
+        </blockquote>
+        <div class="story-author">
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#C8A875,#43212B)" aria-hidden="true">E</div>
+          <div class="story-author-info">
+            <span class="story-author-name">Elena R.</span>
+            <span class="story-author-role">Mindfulness & Nutrition</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="story-card" aria-label="Story by Anika R.">
+        <div class="story-stars" aria-label="5 star rating">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <blockquote class="story-quote">
+          "I stopped chasing perfect routines and started listening to what my body needed."
+        </blockquote>
+        <div class="story-author">
+          <div class="avatar-placeholder" style="background:linear-gradient(135deg,#B98992,#C8A875)" aria-hidden="true">A</div>
+          <div class="story-author-info">
+            <span class="story-author-name">Anika R.</span>
+            <span class="story-author-role">Hormonal Wellness Program</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Wellness Journey Timeline -->
+    <div class="timeline-wrap" aria-label="The Viora wellness journey">
+      <p class="timeline-label">The Viora Wellness Journey</p>
+      <div class="timeline" role="list">
+
+        <div class="timeline-step" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <span class="timeline-step-label">Listen</span>
+        </div>
+
+        <div class="timeline-connector" aria-hidden="true"><div class="timeline-connector-fill"></div></div>
+
+        <div class="timeline-step" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <span class="timeline-step-label">Understand</span>
+        </div>
+
+        <div class="timeline-connector" aria-hidden="true"><div class="timeline-connector-fill"></div></div>
+
+        <div class="timeline-step" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <span class="timeline-step-label">Personalize</span>
+        </div>
+
+        <div class="timeline-connector" aria-hidden="true"><div class="timeline-connector-fill"></div></div>
+
+        <div class="timeline-step" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <span class="timeline-step-label">Support</span>
+        </div>
+
+        <div class="timeline-connector" aria-hidden="true"><div class="timeline-connector-fill"></div></div>
+
+        <div class="timeline-step" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <span class="timeline-step-label">Grow</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Background quote -->
+    <div class="stories-bg-quote-wrap">
+      <blockquote class="stories-bg-quote" aria-label="Viora guiding philosophy">
+        "Your wellbeing is not a destination.<br>It is a relationship with yourself."
+      </blockquote>
+      <div class="stories-bg-quote-deco">
+        <span class="accent-line" style="display:inline-block;margin:0 auto;" aria-hidden="true"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 4: CONTACT / BEGIN YOUR JOURNEY
+══════════════════════════════════════════════════════════════ -->
+<section class="section contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: image + info -->
+      <div>
+        <div class="contact-image-wrap">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80&auto=format&fit=crop"
+               alt="A serene wellness consultation space — warm and inviting"
+               width="560" height="700" loading="lazy" />
+        </div>
+        <div class="contact-info-bar">
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+            <span>hello@viora.com</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+            <span>+1 555 014 2786</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div>
+            <span>Mon – Fri &nbsp;·&nbsp; 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-side">
+        <header class="contact-form-header">
+          <span class="eyebrow">Start Your Journey</span>
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 class="section-title" id="contact-title">"Make Space for<br>Your Wellbeing."</h2>
+          <p class="section-subtitle">
+            Start with a conversation and discover a wellness experience shaped around you.
+          </p>
+        </header>
+
+        <form id="contact-form" novalidate aria-label="Contact and consultation form">
+
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name" class="form-control"
+                   placeholder="Your full name" autocomplete="name" required
+                   aria-required="true" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control"
+                   placeholder="your@email.com" autocomplete="email" required
+                   aria-required="true" />
+          </div>
+
+          <div class="form-group">
+            <label for="wellness-interest">Wellness Interest</label>
+            <select id="wellness-interest" name="wellness_interest" class="form-control" aria-required="true">
+              <option value="" disabled selected>Select an area</option>
+              <option value="hormonal">Hormonal Wellness</option>
+              <option value="mind">Mind &amp; Emotional Wellness</option>
+              <option value="nutrition">Nutrition &amp; Energy</option>
+              <option value="movement">Movement &amp; Body</option>
+              <option value="coaching">Wellness Coaching</option>
+              <option value="other">General / Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact_method" class="form-control">
+              <option value="" disabled selected>Select a method</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="video">Video Call</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control"
+                      placeholder="Share a little about your wellness goals…"
+                      rows="4" aria-required="false"></textarea>
+          </div>
+
+          <div class="form-group" style="transition-delay:0.85s">
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+              Begin Your Journey
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo" aria-label="Viora site footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="#home" class="site-logo" aria-label="Viora — Return to top">
+          <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="logo-svg-path" d="M19 6 C14 6 9 10 8 15 C7 20 10 25 14 28 C16 30 18 32 19 34 C20 32 22 30 24 28 C28 25 31 20 30 15 C29 10 24 6 19 6Z" stroke-width="1.5" fill="none" stroke="white"/>
+            <circle class="logo-svg-path" cx="19" cy="16" r="4" stroke-width="1.5" fill="none" stroke="white"/>
+            <path class="logo-svg-path" d="M13 22 Q19 26 25 22" stroke-width="1.2" fill="none" stroke-linecap="round" stroke="white"/>
+          </svg>
+          <span class="logo-wordmark">Viora</span>
+        </a>
+        <p class="footer-tagline">Thoughtful wellness for every season of life.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="#" class="social-btn" aria-label="Follow Viora on Instagram" title="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-btn" aria-label="Follow Viora on Facebook" title="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-btn" aria-label="Follow Viora on Pinterest" title="Pinterest">
+            <i class="fa-brands fa-pinterest-p" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="social-btn" aria-label="Connect with Viora on LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation column -->
+      <nav class="footer-nav-col" aria-label="Footer navigation">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#wellness">Wellness</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Newsletter column -->
+      <div class="footer-newsletter" aria-label="Newsletter subscription">
+        <h4>Wellness Notes</h4>
+        <p>Receive thoughtful wellness notes, seasonal guidance, and gentle inspiration.</p>
+        <form id="newsletter-form" novalidate aria-label="Newsletter subscription form">
+          <div class="newsletter-form">
+            <input type="email" class="newsletter-input" id="newsletter-email"
+                   name="newsletter_email" placeholder="your@email.com"
+                   autocomplete="email" aria-label="Email address for newsletter" />
+            <button type="submit" class="newsletter-btn" id="newsletter-submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Viora. All Rights Reserved.</p>
+      <div style="display:flex;align-items:center;gap:32px;">
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </nav>
+        <a href="#home" class="social-btn back-to-top" aria-label="Back to top" title="Back to top">
+          <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>
